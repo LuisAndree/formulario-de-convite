@@ -24,10 +24,9 @@ aside {
 
     & .aside-container {
         max-width: 27.5rem;
+        background-image: url(../assets/Background.png);
 
-        & > img {
-            margin-top: 2rem;
-        }
+        
 
         & h2 {
             font: var(--logo);
