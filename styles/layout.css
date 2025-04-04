@@ -1,6 +1,6 @@
 #app {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 31.75% 68.75%;
 
     height: 100vh;
     overflow: hidden;
@@ -9,11 +9,29 @@
 main {
     overflow: auto;
     padding: 4rem;
-    background-color: var(--shape-background);
+    background-color: var(--shape-body);
+
+    & .main-container {
+        max-width: 52.5rem;
+        margin-left: auto;
+    }
 
 }
 
 aside {
-    background-color: var(--shape-body);
+    background-color: var(--shape-background);
     padding: 4rem;
+
+    & .aside-container {
+        max-width: 27.5rem;
+
+        & > img {
+            margin-top: 2rem;
+        }
+
+        & h2 {
+            font: var(--logo);
+            color: var(--accent-pink);
+        }
+    }
 }
